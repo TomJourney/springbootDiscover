@@ -13,6 +13,6 @@ import org.springframework.stereotype.Component;
 public class HelloService02WithComponentAnnotation {
 
     public void sayHello(String user) {
-        System.out.println("@Component: 02 hello " + user);
+        System.out.println("HelloService02WithComponentAnnotation#sayHello: 02 hello " + user);
     }
 }

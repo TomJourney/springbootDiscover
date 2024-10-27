@@ -10,6 +10,6 @@ package com.tom.chapter00.service;
 public class HelloService {
 
     public void sayHello(String user) {
-        System.out.println("hello " + user);
+        System.out.println("HelloService#sayHell(): hello " + user);
     }
 }
