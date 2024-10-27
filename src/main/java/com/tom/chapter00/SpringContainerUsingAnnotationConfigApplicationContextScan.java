@@ -1,7 +1,5 @@
 package com.tom.chapter00;
 
-import com.tom.chapter00.service.HelloService;
-import com.tom.chapter00.service.HelloService02;
 import com.tom.chapter00.service.HelloService02WithComponentAnnotation;
 import com.tom.chapter00.service.HelloServiceWithComponentAnnotation;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -13,7 +11,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @Description TODO
  * @createTime 2024年10月23日 06:37:00
  */
-public class JavaBasedContainerUsingScanMain {
+public class SpringContainerUsingAnnotationConfigApplicationContextScan {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
         context.scan("com.tom.chapter00.service");
