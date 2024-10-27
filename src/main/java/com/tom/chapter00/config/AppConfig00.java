@@ -1,4 +1,4 @@
-package com.tom.chapter00;
+package com.tom.chapter00.config;
 
 import com.tom.chapter00.service.HelloService;
 import org.springframework.context.annotation.Bean;
@@ -13,6 +13,10 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class AppConfig00 {
+
+    public AppConfig00() {
+        System.out.println("AppConfig00 构造器");
+    }
     @Bean
     public HelloService helloService() {
         return new HelloService();

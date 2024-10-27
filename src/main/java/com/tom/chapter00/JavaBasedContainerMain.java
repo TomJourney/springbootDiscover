@@ -1,5 +1,6 @@
 package com.tom.chapter00;
 
+import com.tom.chapter00.config.AppConfig00;
 import com.tom.chapter00.service.HelloService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
