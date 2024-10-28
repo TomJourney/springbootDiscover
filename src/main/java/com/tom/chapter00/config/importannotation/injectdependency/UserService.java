@@ -24,4 +24,8 @@ public class UserService {
     public void saveUser(String name) {
         userRepository.saveUser(name);
     }
+
+    public UserRepository getUserRepository() {
+        return userRepository;
+    }
 }
