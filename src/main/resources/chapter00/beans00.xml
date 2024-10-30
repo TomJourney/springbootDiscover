@@ -11,7 +11,7 @@
         <context:component-scan base-package="com.tom.chapter00.composejavaandxml"/>
         <context:property-placeholder location="classpath:/chapter00/jdbc.properties"/>
 
-        <bean class="com.tom.chapter00.composejavaandxml.ComposeJavaAndXmlRepository">
+        <bean class="com.tom.springnote.chapter00.composejavaandxml.ComposeJavaAndXmlRepository">
             <property name="url" value="${jdbc.url}"/>
         </bean>
     </beans>
