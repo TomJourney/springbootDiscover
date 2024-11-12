@@ -1,0 +1,3 @@
+# Run Listeners
+org.springframework.boot.SpringApplicationRunListener=\
+com.tom.springnote.chapter03.springapprunlistener.TomSpringAppRunListener01

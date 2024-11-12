@@ -14,7 +14,7 @@ public class SpringContainerUsingAnnotationConfigApplicationContextScanConfigura
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
         System.out.println("before scan()");
-        context.scan("com.tom.chapter00");
+        context.scan("com.tom.springnote.chapter00");
         System.out.println("after scan()");
         System.out.println("before refresh()");
         context.refresh();

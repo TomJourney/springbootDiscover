@@ -14,7 +14,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class SpringContainerUsingAnnotationConfigApplicationContextScan {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-        context.scan("com.tom.chapter00.service");
+        context.scan("com.tom.springnote.chapter00.service");
         context.refresh();
         context.getBean(HelloServiceWithComponentAnnotation.class).sayHello("Musk");
         context.getBean(HelloService02WithComponentAnnotation.class).sayHello("Trump");
