@@ -4,7 +4,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import com.tom.springnote.chapter03.FirstApplication;
+import com.tom.springnote.chapter03.FirstSpringbootApplication;
 import org.junit.jupiter.api.Test;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-@ContextConfiguration(classes = FirstApplication.class)
+@ContextConfiguration(classes = FirstSpringbootApplication.class)
 public class HelloControllerTest {
 
     @Autowired
