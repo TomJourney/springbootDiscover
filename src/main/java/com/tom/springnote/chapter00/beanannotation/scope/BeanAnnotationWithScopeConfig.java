@@ -15,10 +15,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class BeanAnnotationWithScopeConfig {
 
-    public @Bean RepositoryA repositoryA() {
+    public @Bean RepositoryA repositoryA123() {
         return new RepositoryA();
     }
-    public @Bean ServiceA serviceA() {
-        return new ServiceA(repositoryA()); // 调用方法即可注入依赖
+    public @Bean ServiceA serviceA1() {
+        return new ServiceA(repositoryA123()); // 调用方法即可注入依赖
     }
 }

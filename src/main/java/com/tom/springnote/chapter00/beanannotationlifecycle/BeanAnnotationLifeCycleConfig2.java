@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class BeanAnnotationLifeCycleConfig2 {
 
-    @Bean
+    @Bean("beanWithInitMethod2")
     public BeanWithLifeCycleCallback beanWithInitMethod() {
         BeanWithLifeCycleCallback beanWithLifeCycleCallback = new BeanWithLifeCycleCallback();
         beanWithLifeCycleCallback.init();

@@ -1,4 +1,4 @@
-package com.tom.springnote.redis.jedis;
+package com.tom.springnote.usingjedis.jedis;
 
 import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.JedisCluster;

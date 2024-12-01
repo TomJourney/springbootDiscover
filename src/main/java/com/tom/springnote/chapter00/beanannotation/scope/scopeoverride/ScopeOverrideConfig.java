@@ -18,13 +18,13 @@ public class ScopeOverrideConfig {
 
     @Bean
     @Scope("prototype")
-    public RepositoryA repositoryA() {
+    public RepositoryA repositoryA123() {
         return new RepositoryA();
     }
 
     @Bean
     @Scope("singleton")
-    public RepositoryB repositoryB() {
+    public RepositoryB repositoryB123() {
         return new RepositoryB();
     }
 }
