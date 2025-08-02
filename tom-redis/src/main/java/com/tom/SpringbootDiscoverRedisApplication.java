@@ -1,9 +1,8 @@
-package com.tom.springboot.tx.note;
+package com.tom;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * @author Tom
@@ -14,9 +13,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  */
 @SpringBootApplication
 @MapperScan(basePackages = {"com.tom.springboot.tx.note.infrastructure.dao"})
-public class SpringbootTxNoteApplication {
+public class SpringbootDiscoverRedisApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootTxNoteApplication.class, args);
+        SpringApplication.run(SpringbootDiscoverRedisApplication.class, args);
     }
 }
