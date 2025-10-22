@@ -1,0 +1,8 @@
+org.springframework.context.ApplicationListener=\
+com.tom.springbootdiscover.cache.springboot.TomApplicationContextInitializedEventListener,\
+com.tom.springbootdiscover.cache.springboot.TomApplicationEnvironmentPreparedEventListener,\
+com.tom.springbootdiscover.cache.springboot.TomApplicationPreparedEventListener,\
+com.tom.springbootdiscover.cache.springboot.TomApplicationReadyEventListener,\
+com.tom.springbootdiscover.cache.springboot.TomApplicationStartedEventListener,\
+com.tom.springbootdiscover.cache.springboot.TomApplicationStartingEventListener,\
+com.tom.springbootdiscover.cache.springboot.TomAvailabilityChangeEventListener
