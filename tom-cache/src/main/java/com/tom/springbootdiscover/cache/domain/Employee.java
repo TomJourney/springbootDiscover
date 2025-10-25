@@ -12,12 +12,8 @@ import lombok.Data;
 @Data
 public class Employee {
     private Integer id;
-    private Integer order;
-
-    public static Employee build(Integer id, Integer order) {
-        Employee employee = new Employee();
-        employee.id = id;
-        employee.order = order ;
-        return employee;
-    }
+    private String lastName;
+    private String email;
+    private Integer gender;
+    private Integer deptId;
 }
