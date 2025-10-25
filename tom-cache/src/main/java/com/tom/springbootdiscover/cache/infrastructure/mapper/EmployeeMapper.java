@@ -11,17 +11,16 @@ import org.springframework.stereotype.Repository;
  * @Description TODO
  * @createTime 2025年10月23日 07:02:00
  */
-@Repository
 @Mapper
 public interface EmployeeMapper {
 
     @Select("SELECT * FROM employee WHERE id = #{id}")
     public Employee getEmpById(Integer id);
 
-    @Insert("INSERT INTO employee(lastName,email,gender,d_id) VALUES(#{lastName},#{email},#{gender},#{dId})")
+    @Insert("INSERT INTO employee(lastName,email,gender,dept_id) VALUES(#{lastName},#{email},#{gender},#{deptId})")
     public void insertEmp(Employee employee);
 
-    @Update("UPDATE employee SET lastName = #{lastName},email = #{email},gender = #{gender},d_id = #{dId} WHERE id = #{id}")
+    @Update("UPDATE employee SET lastName = #{lastName},email = #{email},gender = #{gender},dept_id = #{deptId} WHERE id = #{id}")
     public void updateEmp(Employee employee);
 
     @Delete("DELETE FROM employee WHERE id = #{id}")
