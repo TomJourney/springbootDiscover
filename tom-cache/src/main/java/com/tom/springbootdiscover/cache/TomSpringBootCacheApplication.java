@@ -1,9 +1,10 @@
 package com.tom.springbootdiscover.cache;
 
-import com.zaxxer.hikari.HikariDataSource;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.cache.annotation.EnableCaching;
 
 /**
  * @author Tom
@@ -13,13 +14,11 @@ import org.springframework.boot.web.servlet.context.ServletWebServerApplicationC
  * @createTime 2025年08月02日 21:26:00
  */
 @SpringBootApplication
+@EnableCaching
+@MapperScan(basePackages = "com.tom.springbootdiscover.cache.infrastructure.mapper")
 public class TomSpringBootCacheApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(TomSpringBootCacheApplication.class, args);
-
-        HikariDataSource hikariDataSource;
-
-        ServletWebServerApplicationContext servletWebServerApplicationContext;
     }
 }
